@@ -27,22 +27,22 @@ define gui.language = "unicode"
 
 ## Dialogue and choices text.
 define gui.dialogue_color = '#ffffff'
-define gui.dialogue_font = "AtkinsonHyperlegible"
+define gui.dialogue_font = "AtkinsonHyperlegible.ttf"
 define gui.dialogue_size = 33
 
 # Character name text.
 define gui.name_color = '#0099cc'
-define gui.name_font = "AtkinsonHyperlegible"
+define gui.name_font = "AtkinsonHyperlegible.ttf"
 define gui.name_size = 45
 
 ## UI normal text.
 define gui.ui_text_color = '#ffffff'
-define gui.ui_text_font = "AtkinsonHyperlegible"
+define gui.ui_text_font = "AtkinsonHyperlegible.ttf"
 define gui.ui_text_size = 33
 
 ## UI accents.
 define gui.accent_color = '#0099cc'
-define gui.label_font = "AtkinsonHyperlegible"
+define gui.label_font = "AtkinsonHyperlegible.ttf"
 define gui.label_size = 36
 
 ## Button text colors.
@@ -59,32 +59,48 @@ define gui.button_insensitive_color = '#8888887f'
 ## Default Styles
 ################################################################################
 
-# style default:
-#     properties gui.text_properties()
-#     language gui.language
+style default:
+    color gui.dialogue_color
+    font gui.dialogue_font
+    size gui.dialogue_size
+    language gui.language
 
-# style input:
-#     properties gui.text_properties("input", accent=True)
-#     adjust_spacing False
+style input:
+    color gui.accent_color
+    adjust_spacing False
 
-# style hyperlink_text:
-#     properties gui.text_properties("hyperlink", accent=True)
-#     hover_underline True
+style hyperlink_text:
+    color gui.accent_color
+    hover_underline True
 
-# style gui_text:
-#     properties gui.text_properties("interface")
+style gui_text:
+    color gui.ui_text_color
+    font gui.ui_text_font
+    size gui.ui_text_size
 
+style button:
+    xysize (None, None)
+    padding (0, 0)
 
-# style button:
-#     properties gui.button_properties("button")
+style button_text:
+    idle_color gui.button_idle_color
+    hover_color gui.button_hover_color
+    selected_color gui.button_selected_color
+    insensitive_color gui.button_insensitive_color
 
-# style button_text is gui_text:
-#     properties gui.text_properties("button")
-#     yalign 0.5
+    font gui.ui_text_font
+    size gui.ui_text_size
+    text_align 0.5
 
+    xalign 0.5
+    yalign 0.5
 
-# style label_text is gui_text:
-#     properties gui.text_properties("label", accent=True)
+style label_text:
+    color gui.accent_color
+    font gui.label_font
+    size gui.label_size
 
-# style prompt_text is gui_text:
-#     properties gui.text_properties("prompt")
+style prompt_text:
+    color gui.ui_text_color
+    font gui.ui_text_font
+    size gui.ui_text_size
