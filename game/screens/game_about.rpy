@@ -2,3 +2,10 @@
 ## triple-quotes, and leave a blank line between paragraphs.
 define gui.about = _p("""
 """)
+
+screen about():
+
+    tag menu
+    
+    use game_menu("About"):
+        text "About here."

@@ -11,7 +11,7 @@ screen main_menu():
 
     style_prefix "main_menu"
 
-    add gui.nearblack
+    add gui.black
 
     vbox:
 
@@ -20,7 +20,7 @@ screen main_menu():
         null height 50
 
         textbutton _("Start") action Start()
-        textbutton _("Load") action ShowMenu("load")
+        textbutton _("Saves") action ShowMenu("saves") keysym "game_menu"
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("About") action ShowMenu("about")
         textbutton _("Help") action ShowMenu("help")
@@ -36,7 +36,7 @@ style main_menu_label:
     xalign 0.5
 
 style main_menu_label_text:
-    color gui.nearwhite
+    color gui.white
     size 180
     xalign 0.5
 
