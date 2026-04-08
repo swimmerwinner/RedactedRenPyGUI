@@ -51,6 +51,13 @@ define gui.button_hover_color = '#66c1e0'
 define gui.button_selected_color = '#ffffff'
 define gui.button_insensitive_color = '#8888887f'
 
+## Other colors.
+define gui.nearblack = "#000008"
+define gui.nearwhite = "#e2e2ff"
+define gui.white = "#ffffff"
+define gui.black = "#000000"
+define gui.darkgrey = "#1c1c1c"
+
 
 
 
