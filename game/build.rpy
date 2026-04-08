@@ -38,7 +38,7 @@
 ## title, and shows up in the interface and error reports.
 ##
 ## The _() surrounding the string marks it as eligible for translation.
-define config.name = _("Delete This")
+define config.name = _("Redacted Ren'Py GUI")
 
 
 ## The version of the game.
@@ -48,7 +48,7 @@ define config.version = "1.0"
 ## A short name for the game used for executables and directories in the built
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
-define build.name = "DeleteThis"
+define build.name = "RedactedGUI"
 
 
 
